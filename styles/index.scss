@@ -1,0 +1,97 @@
+// 
+@import './dependencies/*.scss';
+/******************************************************
+*                    SOME FIXES
+******************************************************/
+*, *:after, *:before {
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-appearance: none !important;
+   -webkit-font-smoothing: antialiased;
+   box-sizing: border-box;
+   hyphens: auto;
+   outline: none;
+}
+/******************************************************
+*                  INITIAL STYLES
+******************************************************/
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   height: 1px;
+   overflow: hidden;
+   position: absolute !important;
+   width: 1px;
+}
+
+html, body {
+   overflow-x: hidden;
+}
+
+body {
+	background: #FFF;
+	color: #333;
+   font: 18px 'Roboto', sans-serif;
+   font-weight: lighter;
+   font-weight: 100;
+   overflow-x: hidden;
+   
+   h1, h2, h3, h4, h5 {
+      font-family: 'Nunito', 'Arial Black', sans-serif;
+      hyphens: none;
+      margin: 1em 0 1rem;
+      text-transform: uppercase;
+   }
+   
+   input {
+      border: none;
+   }
+   
+   &.no-scroll {
+      overflow: hidden;
+   }
+
+   #page {
+      &.site {
+         position: relative;
+
+         @include tablet {
+            padding: 0;
+         }
+      }
+   }
+   } // body
+/******************************************************
+*                    MODULES
+******************************************************/
+@import './modules/*.scss';
+// @import './modules/global';
+// @import './modules/header';
+// @import './modules/navigation';
+// @import './modules/header-aside';
+// @import './modules/side-nav';
+// @import './modules/meta-slider';
+// @import './modules/news';
+// @import './modules/featured';
+// @import './modules/single-news';
+// @import './modules/list-places';
+// @import './modules/single-place';
+// @import './modules/post-navigation';
+// @import './modules/sharing-tools';
+// @import './modules/agenda';
+// @import './modules/single-agenda';
+// @import './modules/info-tur';
+// @import './modules/maps';
+// @import './modules/blend-page';
+// @import './modules/how-to-publish';
+// @import './modules/search-results';
+// @import './modules/aside';
+// @import './modules/footer';
+// @import './modules/404';
+// @import './modules/default-post';
+
+
+
+
+
+
+
+

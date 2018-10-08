@@ -1,0 +1,48 @@
+{
+   "name": "dissan",
+   "version": "1.0.0",
+   "description": "Droguería Cuyo",
+   "private": true,
+   "browserslist": [
+      "> 2%"
+   ],
+   "scripts": {
+      "dev": "webpack -d --watch",
+      "prod": "webpack -p"
+   },
+   "author": "penholder",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/penhold3r/dissan.git"
+   },
+   "bugs": {
+      "url": "https://github.com/penhold3r/dissan/issues"
+   },
+   "homepage": "https://github.com/penhold3r/dissan#readme",
+   "license": "MIT",
+   "devDependencies": {
+      "autoprefixer": "^8.6.5",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.5",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "css-loader": "^0.28.11",
+      "file-loader": "^1.1.11",
+      "hoek": "^5.0.4",
+      "imagesloaded": "^4.1.4",
+      "mini-css-extract-plugin": "^0.4.3",
+      "node-libs-browser": "^2.1.0",
+      "node-sass": "^4.9.3",
+      "node-sass-glob-importer": "^5.2.0",
+      "postcss-loader": "^2.1.6",
+      "sanitize.css": "^5.0.0",
+      "sass-loader": "^7.1.0",
+      "simple-scrollbar": "^0.4.0",
+      "tiny-slider": "^2.8.7",
+      "url-loader": "^1.1.1",
+      "webpack": "^4.20.2",
+      "webpack-cli": "^3.1.1",
+      "whatwg-fetch": "^2.0.4"
+   },
+   "dependencies": {}
+}
