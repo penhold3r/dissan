@@ -22,10 +22,6 @@
    width: 1px;
 }
 
-html, body {
-   overflow-x: hidden;
-}
-
 body {
 	background: #FFF;
 	color: #333;
@@ -34,37 +30,29 @@ body {
    font-weight: 100;
    overflow-x: hidden;
    
-   h1, h2, h3, h4, h5 {
-      font-family: 'Nunito', 'Arial Black', sans-serif;
-      hyphens: none;
-      margin: 1em 0 1rem;
-      text-transform: uppercase;
-   }
-   
-   input {
-      border: none;
-   }
-   
-   &.no-scroll {
-      overflow: hidden;
-   }
+   main.site-main {
+      overflow-x: hidden;
 
-   #page {
-      &.site {
-         position: relative;
-
-         @include tablet {
-            padding: 0;
-         }
+      h1, h2, h3, h4, h5 {
+         font-family: 'Nunito', 'Arial Black', sans-serif;
+         hyphens: none;
+         margin: 1em 0 1rem;
+         text-transform: uppercase;
+      }
+      
+      input {
+         border: none;
       }
    }
-   } // body
+
+} // body
 /******************************************************
 *                    MODULES
 ******************************************************/
 @import './modules/*.scss';
+
 // @import './modules/global';
-// @import './modules/header';
+//@import './modules/header';
 // @import './modules/navigation';
 // @import './modules/header-aside';
 // @import './modules/side-nav';

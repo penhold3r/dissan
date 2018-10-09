@@ -28,9 +28,10 @@ const domReady = callback => {
  */
 const Dissan = () => {
 
-   console.log('init')
+   console.log('init');
+   console.log(JSON.stringify(theme, null, 2));
 
 };
-//
+
 domReady(Dissan);
 //--------------------------------------------------------
