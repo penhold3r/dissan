@@ -1,0 +1,33 @@
+section.services {
+   background: $main-color;
+   position: relative;
+
+   .services-content {
+      color: #FFF;
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 30px;
+      position: relative;
+   }
+
+   .feat-img {
+      height: 400px;
+      position: relative;
+
+      &:before {
+         background: rgba($main-color, 0.5);
+         content: '';
+         height: 150px;
+         left: 0;
+         position: absolute;
+         top: 0;
+         width: 100%;
+      }
+
+      img{
+         height: 100%;
+         object-fit: cover;
+         width: 100%;
+      }
+   }
+}

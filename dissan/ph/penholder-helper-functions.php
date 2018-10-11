@@ -43,10 +43,12 @@ add_filter('body_class', 'categories_to_bodyclasses');
  *--------------------------------------------
  * Display featured image
  */
-function feat_img($type_img = 'full', $blur = true)
+function feat_img($type_img = 'full', $blur = true, array $classes = array())
 {
    global $post;
-   echo '<div class="feat-img">';
+   $classes = count($classes) === 0 ? 'feat-img' : implode(" ", $classes) . ' feat-img';
+
+   echo '<div class="'. $classes .'">';
    if (has_post_thumbnail($post->ID)) {
       if ($blur) {
          echo '<div class="bg-placeholder-img" style="background-image: url(' . get_the_post_thumbnail_url($post->ID, 'thumbnail') . ')"></div>';

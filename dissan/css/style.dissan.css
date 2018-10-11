@@ -645,7 +645,19 @@ body {
 *                    MODULES
 ******************************************************/
 section.about {
-  background: #788e9a; }
+  background: white;
+  display: flex;
+  position: relative;
+  padding: 0 30px 30px; }
+  section.about .about-content {
+    background: #FFF;
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+    top: -30px; }
 
 .site-header {
   background: #FFF;
@@ -680,16 +692,22 @@ section.about {
         margin: 0;
         padding: 0; }
         .site-header .inner-header .main-nav .menu ul li {
+          border-right: 1px solid #788e9a;
           margin: 0;
           padding: 0; }
+          .site-header .inner-header .main-nav .menu ul li:last-child {
+            border: none; }
           .site-header .inner-header .main-nav .menu ul li a {
             color: #004a57;
             display: block;
             font-family: 'Nunito', 'Arial Black', sans-serif;
             font-weight: bold;
-            padding: 5px;
+            padding: 3px 9px;
             text-decoration: none;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            transition: all 0.3s; }
+            .site-header .inner-header .main-nav .menu ul li a:hover {
+              color: #e95451; }
 
 section.hero {
   background: linear-gradient(45deg, #004a57 30%, #FFF 50%, #e95451 100%);
@@ -721,4 +739,30 @@ section.hero {
     position: relative;
     text-transform: uppercase;
     z-index: 1; }
+
+section.services {
+  background: #004a57;
+  position: relative; }
+  section.services .services-content {
+    color: #FFF;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px;
+    position: relative; }
+  section.services .feat-img {
+    height: 400px;
+    position: relative; }
+    section.services .feat-img:before {
+      background: rgba(0, 74, 87, 0.5);
+      content: '';
+      height: 150px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+    section.services .feat-img img {
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%; }
 

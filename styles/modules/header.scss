@@ -40,17 +40,25 @@
                padding: 0;
 
                li {
+                  border-right: 1px solid $grey;
                   margin: 0;
                   padding: 0;
+
+                  &:last-child { border: none }
 
                   a{
                      color: $main-color;
                      display: block;
                      font-family: 'Nunito', 'Arial Black', sans-serif;
                      font-weight: bold;
-                     padding: 5px;
+                     padding: 3px 9px;
                      text-decoration: none;
                      text-transform: uppercase;
+                     transition: all 0.3s;
+
+                     &:hover {
+                        color: $accent-color;
+                     }
                   }
                }
             }

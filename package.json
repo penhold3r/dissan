@@ -44,5 +44,7 @@
       "webpack-cli": "^3.1.1",
       "whatwg-fetch": "^2.0.4"
    },
-   "dependencies": {}
+   "dependencies": {
+      "materialize-css": "^1.0.0-rc.2"
+   }
 }

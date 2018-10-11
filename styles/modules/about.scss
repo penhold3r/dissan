@@ -1,3 +1,17 @@
 section.about {
-   background: $grey;
+   background: lighten($grey, 50);
+   display: flex;
+   position: relative;
+   padding: 0 30px 30px;
+
+   .about-content {
+      background: #FFF;
+      padding: 30px;
+      border-radius: 2px;
+      box-shadow: $box-shadow;
+      margin: 0 auto;
+      max-width: 800px;
+      position: relative;
+      top: -30px;
+   }
 }

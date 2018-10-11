@@ -8,9 +8,11 @@
 */
 //--------------------------------------------------------
 // modules
-
+import parallax from './modules/parallax';
 // core styles
 import 'sanitize.css';
+import 'materialize-css';
+import M from 'materialize-css';
 import '../styles/index.scss';
 //--------------------------------------------------------
 //>>     DOM READY
@@ -31,6 +33,11 @@ const Dissan = () => {
    console.log('init');
    console.log(JSON.stringify(theme, null, 2));
 
+   const parallaxImg = document.querySelector('.parallax img');
+
+   parallaxImg && parallax(parallaxImg);
+
+   M.AutoInit();
 };
 
 domReady(Dissan);

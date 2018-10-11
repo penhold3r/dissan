@@ -25,10 +25,8 @@ get_header();
 			);
 			$query = new WP_Query( $args );
 			
-			if( $query->have_posts() )
-			{
-				while( $query->have_posts() )
-				{
+			if( $query->have_posts() ) {
+				while( $query->have_posts() ) {
                $query->the_post();
 
                switch ( get_the_title() ) {
@@ -38,6 +36,10 @@ get_header();
                   
                   case 'Nosotros':
                      get_template_part( 'template-parts/content', 'about');
+                     break;
+                  
+                  case 'Servicios':
+                     get_template_part( 'template-parts/content', 'services');
                      break;
                   
                   default:
