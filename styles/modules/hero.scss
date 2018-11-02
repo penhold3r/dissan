@@ -1,36 +1,41 @@
 section.hero {
-   background: linear-gradient(45deg, $main-color 30%, #FFF 50%, $accent-color 100%);
-   display: flex;
-   height: 60vh;
-   min-height: 450px;
-   position: relative;
-
-   .feat-img {
+  background: linear-gradient(
+    45deg,
+    $main-color 30%,
+    #fff 50%,
+    $accent-color 100%
+  );
+  display: flex;
+  height: 60vh;
+  min-height: 450px;
+  position: relative;
+  .feat-img {
+    height: 100%;
+    left: 0;
+    mix-blend-mode: multiply;
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    z-index: 0;
+    height: 60vh;
+    min-height: 450px;
+    .feat-img-file {
       height: 100%;
-      left: 0;
-      mix-blend-mode: multiply;
-      position: fixed;
-      top: 90px;
+      object-fit: cover;
       width: 100%;
-      z-index: 0;
-      height: 60vh;
-      min-height: 450px;
-
-      .feat-img-file {
-         height: 100%;
-         object-fit: cover;
-         width: 100%;
-      }
-   }
-
-   .hero-text {
-      color: #FFF;
-      font-family: 'Nunito', 'Arial Black', sans-serif;
-      font-size: 3em;
-      font-weight: 800;
-      margin: auto;
-      position: relative;
-      text-transform: uppercase;
-      z-index: 1;
-   }
+    }
+  }
+  .hero-text {
+    color: #fff;
+    font-family: "Nunito", "Arial Black", sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin: auto;
+    max-width: 800px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 15px $main-color;
+    text-transform: uppercase;
+    z-index: 1;
+  }
 }

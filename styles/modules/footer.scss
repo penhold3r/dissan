@@ -1,0 +1,14 @@
+footer.site-footer {
+  background: $main-color;
+  padding: 30px 15px;
+
+  .inner-footer {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    p {
+      color: #fff;
+      text-align: center;
+    }
+  }
+}

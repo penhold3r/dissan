@@ -1,0 +1,130 @@
+section.contact {
+   border-top: 30px solid #fff;
+   border-bottom: 60px solid #fff;
+   background: $main-color;
+   position: relative;
+
+   .contact-content {
+      background: #fff;
+      display: flex;
+      margin: 0 auto;
+      padding: 0 30px;
+      position: relative;
+      width: 90%;
+      max-width: 1300px;
+
+      .contact-text {
+         background: lighten($grey, 40);
+         max-width: 600px;
+         padding: 15px;
+
+         h2 {
+            color: $accent-color;
+            margin: 0 0 15px;
+         }
+      }
+
+      .contact-form {
+         display: flex;
+         flex-direction: column;
+         margin: 0 30px;
+         max-width: 500px;
+
+         .field-block {
+            display: flex;
+            flex-flow: column-reverse;
+            margin-bottom: 1em;
+
+            .field,
+            .label {
+               transition: all 0.2s;
+               touch-action: manipulation;
+            }
+
+            .field {
+               -webkit-appearance: none;
+               border-bottom: 1px solid $grey;
+               border-radius: 0;
+               border-top: 0;
+               border-left: 0;
+               border-right: 0;
+               cursor: text;
+               font-family: inherit;
+               font-size: 1.25em;
+               padding: 6px 9px;
+
+               &.text-area {
+                  height: 2em;
+                  resize: none;
+
+                  &:focus {
+                     height: 5em;
+                  }
+               }
+
+               @include placeholder {
+                  opacity: 0;
+                  transition: inherit;
+               }
+
+               &:focus {
+                  outline: 0;
+                  border-bottom: 1px solid $accent-color;
+
+                  @include placeholder {
+                     //opacity: 1;
+                  }
+               }
+
+               &:placeholder-shown {
+                  + .label {
+                     cursor: text;
+                     max-width: 66.66%;
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                     transform-origin: left bottom;
+                     transform: translate(0, 2.125rem) scale(1.25);
+                     white-space: nowrap;
+                  }
+               }
+
+               &:not(:placeholder-shown),
+               &:focus {
+                  &.text-area {
+                     height: 5em;
+                  }
+                  + .label {
+                     transform: translate(0, 0) scale(1);
+                     cursor: pointer;
+                  }
+               }
+            }
+
+            .label {
+               color: $grey;
+               font-size: 0.6em;
+               letter-spacing: 0.05em;
+               padding: 0 9px;
+               text-transform: uppercase;
+            }
+         }
+
+         .submit-btn {
+            background: $accent-color;
+            border-radius: 2px;
+            box-shadow: $box-shadow;
+            color: #fff;
+            font-size: 0.8em;
+            letter-spacing: 0.06em;
+            margin: 15px 0 0 auto;
+            padding: 9px 15px;
+            text-transform: uppercase;
+         }
+      }
+
+      .gmap {
+         background: $grey;
+         width: 100%;
+      }
+   }
+}

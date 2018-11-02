@@ -1,0 +1,34 @@
+section.brands {
+  background: $grey;
+  display: flex;
+  position: relative;
+  padding: 0 30px 30px;
+
+  .brands-content {
+    color: #fff;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 800px;
+
+    .gallery {
+      padding: 15px 0;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+      .gallery-item {
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+
+        .gallery-icon {
+          img {
+            width: 100%;
+            object-fit: contain;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

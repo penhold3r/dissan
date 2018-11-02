@@ -9,14 +9,13 @@
 
 ?>
 
-<section id="post-<?php the_ID(); ?>" <?php post_class('services'); ?>>
+<section id="post-<?php the_ID(); ?>" <?php post_class('brands'); ?>>
 
    <?php //feat_img('full') ?>
 
-	<div class="services-content">
+	<div class="brands-content">
       <h2><?php the_title() ?></h2>
 		<?php the_content(); ?>
    </div><!-- .hero-text -->
-   <?php feat_img('full', true, array('prlx') ) ?>
 
 </section><!-- #post-<?php the_ID(); ?> -->

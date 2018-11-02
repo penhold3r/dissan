@@ -42,6 +42,14 @@ get_header();
                      get_template_part( 'template-parts/content', 'services');
                      break;
                   
+                  case 'Marcas':
+                     get_template_part( 'template-parts/content', 'brands');
+                     break;
+                  
+                  case 'Contacto':
+                      get_template_part( 'template-parts/content', 'contact');
+                      break;
+                     
                   default:
                      get_template_part( 'template-parts/content', get_post_type() );
                      break;
