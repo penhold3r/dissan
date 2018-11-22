@@ -8,10 +8,11 @@
  */
 //--------------------------------------------------------
 // modules
-import parallax from "./modules/parallax";
+import { Navigation } from './modules/header'
+import parallax from './modules/parallax'
 // core styles
-import "sanitize.css";
-import "../styles/index.scss";
+import 'sanitize.css'
+import '../styles/index.scss'
 //--------------------------------------------------------
 //>>     DOM READY
 /**
@@ -19,21 +20,23 @@ import "../styles/index.scss";
  */
 //--------------------------------------------------------
 const domReady = callback => {
-  document.readyState === "interactive" || document.readyState === "complete"
-    ? callback()
-    : document.addEventListener("DOMContentLoaded", callback);
-};
+   document.readyState === 'interactive' || document.readyState === 'complete'
+      ? callback()
+      : document.addEventListener('DOMContentLoaded', callback)
+}
 /**
  * @callback Dissan - callback function of deomReady()
  */
 const Dissan = () => {
-  console.log("init");
-  console.log(JSON.stringify(theme, null, 2));
+   console.log('init')
+   console.log(JSON.stringify(theme, null, 2))
 
-  const parallaxImg = document.querySelector(".prlx img");
+   Navigation()
 
-  parallaxImg && parallax(parallaxImg);
-};
+   const parallaxImg = document.querySelector('.prlx img')
 
-domReady(Dissan);
+   parallaxImg && parallax(parallaxImg)
+}
+
+domReady(Dissan)
 //--------------------------------------------------------
